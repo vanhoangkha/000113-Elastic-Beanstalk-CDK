@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploy Web App With Elastic Beanstalk and CDK Pipelines :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1700820214" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1700820214" rel="stylesheet">
-    <link href="/css/hybrid.css?1700820214" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1700820214" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1700820214" rel="stylesheet">
-    <link href="/css/auto-complete.css?1700820214" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1700820214" rel="stylesheet">
-    <link href="/css/theme.css?1700820214" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1700820214" rel="stylesheet">
+    <link href="/css/nucleus.css?1733823672" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733823672" rel="stylesheet">
+    <link href="/css/hybrid.css?1733823672" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733823672" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733823672" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733823672" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733823672" rel="stylesheet">
+    <link href="/css/theme.css?1733823672" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733823672" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1700820214" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733823672" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1700820214"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733823672"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1700820214"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1700820214"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733823672"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733823672"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1700820214"></script>
+<script type="text/javascript" src="/js/search.js?1733823672"></script>
 
     
   </div>
@@ -463,7 +463,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>24-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -507,23 +507,23 @@
 <h1 id="deploy-web-app-with-elastic-beanstalk-and-cdk-pipelines">Deploy Web App With Elastic Beanstalk and CDK Pipelines</h1>
 <h3 id="overview">Overview</h3>
 <p>In this workshop, we will demonstrate how to create CICD Pipelines with CDK to deploy an application into Elastic Beanstalk automatically.
-<img src="/images/arch.png?pc=90pt" alt="Architect"></p>
+<img alt="Architect" src="/images/arch.png?pc=90pt"></p>
 <h3 id="content">Content</h3>
 <ol>
-<li><a href="./1-introduction/">Introduction</a></li>
-<li><a href="./2-preparation/">Preparation</a>
+<li><a href="/1-introduction/">Introduction</a></li>
+<li><a href="/2-preparation/">Preparation</a>
 <ul>
-<li>2.1 <a href="./2-preparation/2.1-createrepo/">Create GitHub Repository</a></li>
-<li>2.2 <a href="./2-preparation/2.2-setupenv/">Set up environment</a></li>
+<li>2.1 <a href="/2-preparation/2.1-createrepo/">Create GitHub Repository</a></li>
+<li>2.2 <a href="/2-preparation/2.2-setupenv/">Set up environment</a></li>
 </ul>
 </li>
-<li><a href="./3-buildapp/">Build web application</a></li>
-<li><a href="./4-createinfrausingcdk/">Create infrastructure using CDK</a></li>
-<li><a href="./5-addbeanstalkcdk/">Add Elastic BeanStalk to CDK</a></li>
-<li><a href="./6-createcdkpipelinestack/">Create CDK Pipeline stack</a></li>
-<li><a href="./7-deployapp/">Deploy application</a></li>
-<li><a href="./8-checkresult/">Check result</a></li>
-<li><a href="./9-cleanup/">Clean up resources</a></li>
+<li><a href="/3-buildapp/">Build web application</a></li>
+<li><a href="/4-createinfrausingcdk/">Create infrastructure using CDK</a></li>
+<li><a href="/5-addbeanstalkcdk/">Add Elastic BeanStalk to CDK</a></li>
+<li><a href="/6-createcdkpipelinestack/">Create CDK Pipeline stack</a></li>
+<li><a href="/7-deployapp/">Deploy application</a></li>
+<li><a href="/8-checkresult/">Check result</a></li>
+<li><a href="/9-cleanup/">Clean up resources</a></li>
 </ol>
 	
   
@@ -754,19 +754,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1700820214"></script>
-    <script src="/js/jquery.sticky.js?1700820214"></script>
-    <script src="/js/featherlight.min.js?1700820214"></script>
-    <script src="/js/highlight.pack.js?1700820214"></script>
+    <script src="/js/clipboard.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733823672"></script>
+    <script src="/js/jquery.sticky.js?1733823672"></script>
+    <script src="/js/featherlight.min.js?1733823672"></script>
+    <script src="/js/highlight.pack.js?1733823672"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1700820214"></script>
-    <script src="/js/learn.js?1700820214"></script>
-    <script src="/js/hugo-learn.js?1700820214"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733823672"></script>
+    <script src="/js/learn.js?1733823672"></script>
+    <script src="/js/hugo-learn.js?1733823672"></script>
 
-    <link href="/mermaid/mermaid.css?1700820214" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1700820214"></script>
+    <link href="/mermaid/mermaid.css?1733823672" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733823672"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

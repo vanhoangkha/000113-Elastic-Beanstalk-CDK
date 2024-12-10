@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Deploy application :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1700820214" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1700820214" rel="stylesheet">
-    <link href="/css/hybrid.css?1700820214" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1700820214" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1700820214" rel="stylesheet">
-    <link href="/css/auto-complete.css?1700820214" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1700820214" rel="stylesheet">
-    <link href="/css/theme.css?1700820214" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1700820214" rel="stylesheet">
+    <link href="/css/nucleus.css?1733823672" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733823672" rel="stylesheet">
+    <link href="/css/hybrid.css?1733823672" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733823672" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733823672" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733823672" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733823672" rel="stylesheet">
+    <link href="/css/theme.css?1733823672" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733823672" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1700820214" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733823672" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1700820214"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733823672"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1700820214"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1700820214"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733823672"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733823672"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1700820214"></script>
+<script type="text/javascript" src="/js/search.js?1733823672"></script>
 
     
   </div>
@@ -307,7 +307,7 @@
   
     
     <li data-nav-id="/7-deployapp/" title="Deploy application" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -463,7 +463,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>24-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -572,9 +572,9 @@
 <li>Replace <strong>REGION</strong> with your Region ID</li>
 <li>Paste and run it in terminal.</li>
 </ol>
-<p><img src="/images/7.deployapp/7.1deployapp.png?pc=90pt" alt="Create CDK Infrastructure">
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.1deployapp.png?pc=90pt">
 5. After bootstraping, go to <a href="https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks">CloudFormation</a>. You will see a stack name <strong>CDKToolkit</strong> had been provisioned.</p>
-<p><img src="/images/7.deployapp/7.2deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.2deployapp.png?pc=90pt"></p>
 <h3 id="build-and-deploy-the-cdk-application">Build and Deploy the CDK Application</h3>
 <p>After we have bootstrapped our AWS account and Region, we are ready to build and deploy our CDK application.</p>
 <ol>
@@ -585,7 +585,7 @@
 </code></pre>
 </div>
 
-<p><img src="/images/7.deployapp/7.3deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.3deployapp.png?pc=90pt"></p>
 <ol start="2">
 <li>If there are no errors in our application, this will succeed. We can now push all the code to the GitHub repository.</li>
 </ol>
@@ -596,7 +596,7 @@ git push
 </code></pre>
 </div>
 
-<p><img src="/images/7.deployapp/7.4deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.4deployapp.png?pc=90pt"></p>
 
 <div class="notices warning" ><p>Input the GitHub username and access token if necessary.</p>
 </div>
@@ -613,21 +613,21 @@ git push
 <div class="notices warning" ><p>Enter <strong>Y</strong> if was requested.</p>
 </div>
 </p>
-<p><img src="/images/7.deployapp/7.5deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.5deployapp.png?pc=90pt"></p>
 <ol start="4">
 <li>After CDK application was deployed in AWS successfully, a CloudFormation name <strong>CdkPipelineStack</strong> will be created.</li>
 <li>Go to <a href="https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/stacks">Stack of CloudFormation</a> to check the result.</li>
 </ol>
-<p><img src="/images/7.deployapp/7.6deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.6deployapp.png?pc=90pt"></p>
 <ol start="6">
 <li>This CloudFormation stack will create an <strong>Empty CodePipeline</strong> name <strong>MyServicePipeline</strong>.</li>
 <li>Go to <a href="https://ap-southeast-1.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=ap-southeast-1">CodePipeline</a> to see your pipeline.</li>
 </ol>
-<p><img src="/images/7.deployapp/7.7deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.7deployapp.png?pc=90pt"></p>
 <ol start="8">
 <li>Click to <strong>pipeline</strong> to see stages.</li>
 </ol>
-<p><img src="/images/7.deployapp/7.8deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.8deployapp.png?pc=90pt"></p>
 <h3 id="add-a-deploy-stage-for-elastic-beanstalk-environment">Add a Deploy Stage for Elastic Beanstalk Environment</h3>
 <p>So far, we have provisioned an empty pipeline, and the pipeline isn’t deploying our web application yet. Now, we will create a stage to deploy application to Elastic Beanstalk.</p>
 <ol>
@@ -659,7 +659,7 @@ constructor(scope: Construct, id: string, props?: EBEnvProps) {
 </code></pre>
 </div>
 
-<p><img src="/images/7.deployapp/7.9deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.9deployapp.png?pc=90pt"></p>
 <ol start="3">
 <li>Add a new import line at the top of <strong>lib/cdk-pipeline-stack.ts</strong>.</li>
 </ol>
@@ -685,7 +685,7 @@ const deployStage = pipeline.addStage(deploy);
 </code></pre>
 </div>
 
-<p><img src="/images/7.deployapp/7.10deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.10deployapp.png?pc=90pt"></p>
 <ol start="5">
 <li>Run <strong>npm run build</strong> and push source code to GitHub repository.</li>
 </ol>
@@ -697,7 +697,7 @@ git push
 </code></pre>
 </div>
 
-<p><img src="/images/7.deployapp/7.11deployapp.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/7.deployapp/7.11deployapp.png?pc=90pt"></p>
 
 
 
@@ -940,19 +940,19 @@ git push
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1700820214"></script>
-    <script src="/js/jquery.sticky.js?1700820214"></script>
-    <script src="/js/featherlight.min.js?1700820214"></script>
-    <script src="/js/highlight.pack.js?1700820214"></script>
+    <script src="/js/clipboard.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733823672"></script>
+    <script src="/js/jquery.sticky.js?1733823672"></script>
+    <script src="/js/featherlight.min.js?1733823672"></script>
+    <script src="/js/highlight.pack.js?1733823672"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1700820214"></script>
-    <script src="/js/learn.js?1700820214"></script>
-    <script src="/js/hugo-learn.js?1700820214"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733823672"></script>
+    <script src="/js/learn.js?1733823672"></script>
+    <script src="/js/hugo-learn.js?1733823672"></script>
 
-    <link href="/mermaid/mermaid.css?1700820214" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1700820214"></script>
+    <link href="/mermaid/mermaid.css?1733823672" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733823672"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo CICD Pipeline Stack :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1700820214" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1700820214" rel="stylesheet">
-    <link href="/css/hybrid.css?1700820214" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1700820214" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1700820214" rel="stylesheet">
-    <link href="/css/auto-complete.css?1700820214" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1700820214" rel="stylesheet">
-    <link href="/css/theme.css?1700820214" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1700820214" rel="stylesheet">
+    <link href="/css/nucleus.css?1733823672" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733823672" rel="stylesheet">
+    <link href="/css/hybrid.css?1733823672" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733823672" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733823672" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733823672" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733823672" rel="stylesheet">
+    <link href="/css/theme.css?1733823672" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733823672" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1700820214" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733823672" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1700820214"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733823672"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1700820214"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1700820214"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733823672"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733823672"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1700820214"></script>
+<script type="text/javascript" src="/js/search.js?1733823672"></script>
 
     
   </div>
@@ -281,7 +281,7 @@
   
     
     <li data-nav-id="/vi/6-createcdkpipelinestack/" title="Tạo CICD Pipeline Stack" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -463,7 +463,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>24-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -598,7 +598,7 @@ constructor(scope: Construct, id: string, props?: StackProps) {
 </code></pre>
 </div>
 
-<p><img src="/images/6.cicdpipeline/6.1addfile.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<p><img alt="Create CDK Infrastructure" src="/images/6.cicdpipeline/6.1addfile.png?pc=90pt"></p>
 <p>Code xác định các thuộc tính cơ bản của đường ống như sau:</p>
 <ul>
 <li>Tên của đường ống.</li>
@@ -625,13 +625,13 @@ app.synth();
 </code></pre>
 </div>
 
-<img src="/images/6.cicdpipeline/6.2accountid.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<img alt="Create CDK Infrastructure" src="/images/6.cicdpipeline/6.2accountid.png?pc=90pt"></p>
 
 <div class="notices info" ><p>Thay thế <strong>ACCOUNT</strong> với Account ID của bạn và <strong>REGION</strong> với Region ID, Ví dụ: <code>ap-southeast-1</code> cho vùng Singapore.</p>
 </div>
 
 <p>Sao chép account ID của bạn tại đây.
-<img src="/images/6.cicdpipeline/6.3accountid.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<img alt="Create CDK Infrastructure" src="/images/6.cicdpipeline/6.3accountid.png?pc=90pt"></p>
 <ol start="5">
 <li>Thêm đoạn bên dưới vào tệp cdk.json trong phần &ldquo;context&rdquo;:</li>
 </ol>
@@ -645,7 +645,7 @@ app.synth();
 </code></pre>
 </div>
 
-<img src="/images/6.cicdpipeline/6.4cdkjson.png?pc=90pt" alt="Create CDK Infrastructure"></p>
+<img alt="Create CDK Infrastructure" src="/images/6.cicdpipeline/6.4cdkjson.png?pc=90pt"></p>
 <h3 id="kết-nối-github-đến-codepipelines">Kết nối GitHub đến CodePipelines</h3>
 <p>For AWS CodePipeline to read from this GitHub repo, we also need to configure the GitHub personal access token we created earlier.
 This token should be stored as a plaintext secret (not a JSON secret) in AWS Secrets Manager under the exact name github-token.
@@ -660,10 +660,10 @@ Token này phải được lưu trữ dưới dạng bí mật văn bản gốc 
 </div>
 
 <ol start="2">
-<li>Thay thế <strong>GITHUB_ACCESS_TOKEN</strong> với access token được tạo tại <a href="../2-preparation/2.1-createrepo/">2.1 Create GitHub repository</a>.</li>
+<li>Thay thế <strong>GITHUB_ACCESS_TOKEN</strong> với access token được tạo tại <a href="/vi/2-preparation/2.1-createrepo/">2.1 Create GitHub repository</a>.</li>
 <li>Thay thế <strong>REGION</strong> với Region ID của bạn, Ví dụ: <code>ap-southeast-1</code>.</li>
 <li>Dán và chạy tại terminal của Cloud9.
-<img src="/images/6.cicdpipeline/6.5accesstoken.png?pc=90pt" alt="Create CDK Infrastructure"></li>
+<img alt="Create CDK Infrastructure" src="/images/6.cicdpipeline/6.5accesstoken.png?pc=90pt"></li>
 </ol>
 
 
@@ -907,19 +907,19 @@ Token này phải được lưu trữ dưới dạng bí mật văn bản gốc 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.min.js?1700820214"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1700820214"></script>
-    <script src="/js/jquery.sticky.js?1700820214"></script>
-    <script src="/js/featherlight.min.js?1700820214"></script>
-    <script src="/js/highlight.pack.js?1700820214"></script>
+    <script src="/js/clipboard.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733823672"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733823672"></script>
+    <script src="/js/jquery.sticky.js?1733823672"></script>
+    <script src="/js/featherlight.min.js?1733823672"></script>
+    <script src="/js/highlight.pack.js?1733823672"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1700820214"></script>
-    <script src="/js/learn.js?1700820214"></script>
-    <script src="/js/hugo-learn.js?1700820214"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733823672"></script>
+    <script src="/js/learn.js?1733823672"></script>
+    <script src="/js/hugo-learn.js?1733823672"></script>
 
-    <link href="/mermaid/mermaid.css?1700820214" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1700820214"></script>
+    <link href="/mermaid/mermaid.css?1733823672" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733823672"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
